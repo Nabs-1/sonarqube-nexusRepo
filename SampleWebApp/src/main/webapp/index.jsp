@@ -3,14 +3,15 @@
     <title>Nabilah's Bakery</title>
     <style>
       body {
-        background-image: url('static/images/pexels-davideibiza-1739748.jpg');
-        background-size: cover; /* Ensure the image covers the entire viewport */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Don't repeat the image */
-        margin: 0; /* Remove default margin */
-        font-family: Arial, sans-serif; /* Set a font for better readability */
-        color: white; /* White text to contrast with the background */
-      }
+  background-image: url('file:///C:/Users/noble/Downloads/cake.png'); /* Replace with correct file path */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Repeat the image */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
 
       h1 {
         text-align: center;
