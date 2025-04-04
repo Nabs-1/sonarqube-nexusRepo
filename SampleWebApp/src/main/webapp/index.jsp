@@ -1,47 +1,46 @@
 <html>
   <head>
-    <title>Nabilah's Corner (Podcast)</title>
+    <title>Nabilah's Bakery</title>
     <style>
       body {
-        background-color: #ADD8E6; /* Baby blue color */
-        background-image: url('your_microphone_image_url'); /* Replace with your actual microphone image URL */
-        color: black;
-        font-family: Arial, sans-serif;
-      }
+    background-image: url('static/images/pexels-davideibiza-1739748.jpg');
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Don't repeat the image */
+}
       h1 {
         text-align: center;
         font-size: 2em;
-        /* Removed gradient background */
-        color: black; /* Set text color to black */
+        color: black;
       }
     </style>
   </head>
   <body>
-    <h1>Where we can discuss Everything</h1>
-    <form action="your_server_endpoint_here" method="post" enctype="multipart/form-data">
-      <p>Let us learn something about your music lifestyle</p>
+    <h1>Where you can order any dessert</h1>
+    <form action="C:/JonnyJava/FirstJava.html/profile.html" method="post">
+      <p>Let us learn something about your dessert preferences</p>
       <textarea name="comments" cols="30" rows="5"></textarea>
-      <p>Select your favourite genre of music</p>
-      <input type="radio" name="genre" value="rock" checked />Rock<br />
-      <input type="radio" name="genre" value="pop" />Pop<br />
-      <input type="radio" name="genre" value="raggae" />Reggae<br />
-      <input type="radio" name="genre" value="jazz" />Jazz<br />
-      <p>Select your favourite music service</p>
-      <input type="checkbox" name="service" value="iTunes" />iTunes<br />
-      <input type="checkbox" name="service" value="Sportify" />Spotify<br />
-      <input type="checkbox" name="service" value="Pandora" />Pandora<br />
-      <input type="checkbox" name="service" value="FishFM" />Fish FM<br />
-      <p>What device do you listen to music on</p>
+      <p>Select your favourite type of dessert</p>
+      <input type="radio" name="genre" value="cake" checked />Cake<br />
+      <input type="radio" name="genre" value="donut" />Donut<br />
+      <input type="radio" name="genre" value="cookies" />Cookies<br />
+      <input type="radio" name="genre" value="puff puff" />Puff Puff<br />
+      <p>Select your favourite Bakery</p>
+      <input type="checkbox" name="service" value="Crumbl" />Crumbl<br />
+      <input type="checkbox" name="service" value="Crave Cookies" />Crave Cookies<br />
+      <input type="checkbox" name="service" value="Shipleys" />Shipleys<br />
+      <input type="checkbox" name="service" value="Jolly Jolly Bread" />Jolly Jolly Bread<br />
+      <p>Where do you order food from?</p>
       <select name="devices">
-        <option value="ipod">iPod</option>
-        <option value="radio">Radio</option>
-        <option value="tv">TV</option>
-        <option value="phone">Phone</option>
-        <option value="computer">Computer</option>
+        <option value="doordash">DoorDash</option>
+        <option value="ubereats">UberEats</option>
+        <option value="instacart">Instacart</option>
+        <option value="grubhub">GrubHub</option>
+        <option value="shipt">Shipt</option>
         <option value="echo">Echo</option>
       </select>
-      <p>Upload your Song in MP3 format only.</p>
-      <input type="file" name="user_song" accept="audio/mp3" /><br />
+      <p>Upload a picture of your best meal.</p>
+      <input type="file" name="user_song" /><br />
       <input type="submit" value="Upload" />
     </form>
   </body>
