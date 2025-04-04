@@ -56,11 +56,11 @@ pipeline {
             steps {
                 deploy(
                     adapters: [tomcat9(
-                        credentialsId: 'tompass',
+                        credentialsId: 'tomcat!',
                         path: '',
-                        url: 'http://54.175.55.68:8080/'
+                        url: 'http://13.58.48.192:8080/'
                     )],
-                    contextPath: 'monolithicApp',
+                    contextPath: 'MonolithicApp',
                     war: '**/*.war'
                 )
             }
