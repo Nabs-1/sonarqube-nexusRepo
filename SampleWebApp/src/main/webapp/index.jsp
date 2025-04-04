@@ -1,22 +1,24 @@
 <html>
   <head>
     <title>Nabilah's Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Link to Poppins font -->
     <style>
       body {
-  background-image: url('file:///C:/Users/noble/Downloads/cake.png'); /* Replace with correct file path */
-  background-size: cover; /* Ensure the image covers the entire viewport */
-  background-position: center; /* Center the image */
-  background-repeat: repeat; /* Repeat the image */
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: white;
-}
-
+        background-color: #f7c8d3; /* Baby pink background */
+        background-image: url('https://www.example.com/cupcake-image.jpg'); /* Replace with the URL of a cupcake image */
+        background-size: cover; /* Ensure the image covers the entire viewport */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* No repeat if the image is large enough */
+        font-family: 'Poppins', sans-serif; /* Cool font */
+        color: black; /* Black text color */
+        margin: 0;
+      }
 
       h1 {
         text-align: center;
-        font-size: 2em;
+        font-size: 2.5em;
         margin-top: 20px;
+        color: black; /* Ensure the header has black text */
       }
 
       form {
@@ -24,6 +26,7 @@
         background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for form */
         padding: 20px;
         border-radius: 8px;
+        color: white; /* White text in the form */
       }
 
       p {
