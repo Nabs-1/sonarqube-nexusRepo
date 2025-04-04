@@ -3,7 +3,8 @@
     <title>Nabilah's Corner (Podcast)</title>
     <style>
       body {
-        background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        background-color: #ADD8E6; /* Baby blue color */
+        background-image: url('https://example.com/microphone-pattern.png'); /* Add URL to your microphone image */
         color: black;
         font-family: Arial, sans-serif;
       }
@@ -18,7 +19,7 @@
   </head>
   <body>
     <h1>Where we can discuss Everything</h1>
-    <form action="C:/JonnyJava/FirstJava.html/profile.html" method="post">
+    <form action="your_server_endpoint_here" method="post" enctype="multipart/form-data">
       <p>Let us learn something about your music lifestyle</p>
       <textarea name="comments" cols="30" rows="5"></textarea>
       <p>Select your favourite genre of music</p>
@@ -41,9 +42,8 @@
         <option value="echo">Echo</option>
       </select>
       <p>Upload your Song in MP3 format only.</p>
-      <input type="file" name="user_song" /><br />
+      <input type="file" name="user_song" accept="audio/mp3" /><br />
       <input type="submit" value="Upload" />
     </form>
   </body>
 </html>
-
