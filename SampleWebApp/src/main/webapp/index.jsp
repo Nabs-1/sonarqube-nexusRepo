@@ -1,24 +1,26 @@
 <html>
   <head>
     <title>Nabilah's Bakery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Link to Poppins font -->
+    <!-- Link to Lobster font for a cool cursive-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
     <style>
       body {
         background-color: #f7c8d3; /* Baby pink background */
-        background-image: url('https://www.example.com/cupcake-image.jpg'); /* Replace with the URL of a cupcake image */
-        background-size: cover; /* Ensure the image covers the entire viewport */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* No repeat if the image is large enough */
-        font-family: 'Poppins', sans-serif; /* Cool font */
+        font-family: 'Lobster', sans-serif; /* Cool cursive font */
         color: black; /* Black text color */
         margin: 0;
+        text-align: center; /* Center content */
       }
 
       h1 {
-        text-align: center;
         font-size: 2.5em;
         margin-top: 20px;
         color: black; /* Ensure the header has black text */
+      }
+
+      .cake-icon {
+        font-size: 4em; /* Resize the cake emoji */
+        margin-top: 20px;
       }
 
       form {
@@ -62,7 +64,12 @@
     </style>
   </head>
   <body>
-    <h1>Where you can order any dessert</h1>
+    <h1>Where You Can Order Any Dessert!</h1>
+    
+    <div class="cake-icon">
+      &#127874; <!-- Unicode for birthday cake emoji -->
+    </div>
+
     <form action="your-server-endpoint" method="post" enctype="multipart/form-data">
       <p>Let us learn something about your dessert preferences</p>
       <textarea name="comments" cols="30" rows="5"></textarea>
