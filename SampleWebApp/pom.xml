@@ -1,5 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0  http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0  http://maven.apache.org/maven-v4_0_0.xsd">
   
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sample.webproject</groupId>
@@ -31,6 +32,29 @@
         <artifactId>sonar-maven-plugin</artifactId>
         <version>5.0.0.4389</version>
       </plugin>
+      <!-- JaCoCo Plugin for Code Coverage -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.7</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
+
+  <properties>
+    <!-- SonarQube configuration -->
+    <sonar.projectKey>com.sample.webproject:SampleWebApp-1.0.0</sonar.projectKey>
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+    <sonar.login>your-sonar-token</sonar.login> <!-- Make sure to add your SonarQube token -->
+    <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths> <!-- Path to JaCoCo coverage report -->
+  </properties>
+
 </project>
